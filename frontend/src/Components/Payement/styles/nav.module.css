@@ -1,0 +1,68 @@
+.Box {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.container > div {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  font-size: 14px;
+  align-items: center;
+  gap: 5px;
+  background-color: #eeee;
+  border: 0.5px solid grey;
+}
+.container > div:nth-child(1) {
+  background-color: #ffffff;
+}
+.container2 {
+  width: 75%;
+  padding: 20px;
+  font-size: 14px;
+}
+.flex {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+}
+.flex > div {
+  width: 50%;
+}
+.btton {
+  padding: 12px;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+  background-color: #47a5a9;
+  color: white;
+}
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .container {
+    display: none;
+  }
+  .container2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .container {
+    display: none;
+  }
+  .container2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+  }
+}

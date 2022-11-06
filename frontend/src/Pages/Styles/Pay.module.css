@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  width: 80%;
+  margin: 40px auto;
+  padding: 5px;
+}
+.container > div:nth-child(1) {
+  width: 70%;
+}
+.container > div:nth-child(2) {
+  width: 30%;
+  padding: 10px;
+}
+.Heading {
+  padding: 10px;
+  font-weight: bold;
+  padding-left: 0px;
+  margin: 0;
+}
+.Header {
+  padding: 10px;
+  border: 2px solid grey;
+  border-left: 0;
+  border-right: 0;
+  margin: 5px;
+  color: #47a5a9;
+}
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .container {
+    width: 95%;
+    margin: 30px auto;
+    flex-direction: column;
+  }
+  .container > div:nth-child(1) {
+    width: 100%;
+  }
+  .container > div:nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .container {
+    width: 95%;
+    margin: 30px auto;
+    flex-direction: column;
+  }
+  .container > div:nth-child(1) {
+    width: 100%;
+  }
+  .container > div:nth-child(2) {
+    width: 100%;
+  }
+}

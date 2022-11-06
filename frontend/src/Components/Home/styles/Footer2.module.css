@@ -1,0 +1,51 @@
+.container {
+  background-color: #181818;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  border-top: 2px solid white;
+}
+.container > div {
+  flex: 1;
+  text-align: start;
+}
+.container h5 {
+  text-align: start;
+  padding: 20px 0px;
+}
+.container li {
+  list-style-type: none;
+  text-align: start;
+  font-size: 14px;
+  color: white;
+}
+.Links {
+  color: #51cccc;
+  padding-top: 20px;
+}
+.Links > h5 {
+  padding: 5px;
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  .container h5 {
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+  .container li {
+    list-style-type: none;
+    text-align: start;
+    font-size: 10px;
+    color: white;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  .container {
+    display: none;
+  }
+}

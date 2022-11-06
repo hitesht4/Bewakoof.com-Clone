@@ -1,0 +1,84 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%;
+  margin: 0px auto;
+}
+.Drops {
+  width: 25%;
+}
+.Item {
+  padding: 5px;
+}
+.Item img {
+  width: 100%;
+}
+.Item img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.Item > p {
+  margin: 3px;
+}
+.price {
+  display: flex;
+  gap: 20px;
+}
+.price > p:nth-child(1) {
+  font-weight: bold;
+}
+.price > p:nth-child(2) {
+  text-decoration: line-through;
+  color: grey;
+}
+.p1 {
+  font-weight: bold;
+  font-size: 14px;
+}
+.p2 {
+  font-size: 13px;
+  color: grey;
+}
+.tribe {
+  background-color: #eeeeee;
+  font-size: 13px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.Box {
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .Box {
+    width: 90%;
+  }
+  .Drops {
+    width: 30%;
+  }
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .Box {
+    width: 95%;
+  }
+  .Drops {
+    width: 35%;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 65%;
+  }
+  .p1 {
+    font-size: 13px;
+  }
+  .p2 {
+    font-size: 11px;
+  }
+}

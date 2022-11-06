@@ -1,0 +1,160 @@
+.Container {
+  margin: auto;
+  padding: 10px;
+  background-color: #fcffee;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+.Container > li {
+  list-style-type: none;
+  font-size: 15px;
+}
+.Offer {
+  display: flex;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: #fdf2e5;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.Offer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.One > li {
+  list-style-type: none;
+}
+.bold {
+  font-weight: bolder;
+}
+.bold2 {
+  font-weight: bolder;
+  color: #ef9625;
+}
+
+.Tribe {
+  background-color: #fdd835;
+  margin: auto;
+  padding: 12px;
+  margin: 10px 0px;
+}
+.Tribe > li {
+  list-style-type: none;
+  font-size: 16px;
+  color: white;
+}
+.Tribe span {
+  font-weight: bold;
+  margin: 0px 5px;
+}
+
+.Tribe2 {
+  padding: 12px;
+  border: 0.5px solid grey;
+  margin: 10px 0px;
+}
+.Tribe2 > li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.Coupon {
+  background-color: #ecf6f5;
+  color: #47a5a9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border: 0.5px solid grey;
+}
+.Coupon > button {
+  background-color: #ecf6f5;
+  border: none;
+  font-weight: bold;
+  color: #47a5a9;
+}
+.Coupon > li {
+  list-style-type: none;
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .Container > li {
+    font-size: 13px;
+  }
+  .Offer {
+    padding: 10px;
+  }
+  .Offer > div:nth-child(1) {
+    flex: 70%;
+  }
+  .Offer > div:nth-child(2) {
+    flex: 30%;
+    justify-content: center;
+  }
+  .One > li {
+    list-style-type: none;
+    font-size: 13px;
+  }
+  .bold2 {
+    font-size: 13px;
+  }
+  .Tribe {
+    padding: 10px;
+  }
+  .Tribe > li {
+    font-size: 13px;
+  }
+  .Tribe2 {
+    padding: 10px;
+  }
+  .Tribe2 > li {
+    font-size: 13px;
+  }
+  .Coupon > button {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .Container > li {
+    font-size: 12px;
+  }
+  .Offer {
+    padding: 10px;
+  }
+  .Offer > div:nth-child(1) {
+    flex: 70%;
+  }
+  .Offer > div:nth-child(2) {
+    flex: 30%;
+    justify-content: center;
+  }
+  .One > li {
+    list-style-type: none;
+    font-size: 12px;
+  }
+  .bold2 {
+    font-size: 12px;
+  }
+  .Tribe {
+    padding: 10px;
+  }
+  .Tribe > li {
+    font-size: 12px;
+  }
+  .Tribe2 {
+    padding: 10px;
+  }
+  .Tribe2 > li {
+    font-size: 12px;
+  }
+  .Coupon > button {
+    font-size: 12px;
+  }
+  .Coupon > li {
+    font-size: 12px;
+  }
+}

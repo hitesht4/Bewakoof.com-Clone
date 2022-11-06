@@ -1,0 +1,265 @@
+.Container {
+  display: flex;
+  height: 700px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.Container > div {
+  padding: 10px;
+}
+.One {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.One > div {
+  height: 20%;
+  margin: 5px;
+}
+.One img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.Two {
+  width: 42%;
+}
+.Two img {
+  width: 100%;
+  height: 100%;
+}
+.Two img:hover {
+  cursor: crosshair;
+}
+.Three {
+  width: 43%;
+}
+.Three > h6 {
+  font-size: 20px;
+  color: #4f5362;
+  font-weight: bold;
+}
+.Three > p {
+  color: #737373;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.Rate {
+  background-color: #eeeeee;
+  padding: 12px;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #4f5362;
+}
+.Rate > p {
+  margin: 0;
+  font-weight: bold;
+}
+.Rate span {
+  margin: 0px 4px;
+}
+.Price {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+.Price > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 25px;
+}
+.Price > p:nth-child(2) {
+  color: #4f5362;
+  text-decoration: line-through;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.Price > p:nth-child(3) {
+  color: #24c26b;
+  font-size: 24px;
+  font-weight: bold;
+}
+.Taxes {
+  font-size: 14px !important;
+  color: #4f5362;
+}
+.Tribe {
+  border-top: 4px solid #eeeeee;
+  border-bottom: 4px solid #eeeeee;
+  padding: 5px 22px;
+}
+.Tribe > p {
+  margin: 0;
+  font-size: 15px;
+  color: #4f5362;
+}
+.Tribe span {
+  color: #71b9b9;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.Sizes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.Sizes > div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 3px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.Sizes p {
+  margin: 0;
+}
+.Btns {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.Btns > button {
+  border: none;
+  padding: 10px;
+  width: 43%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bolder;
+}
+.Btns > button:nth-child(1) {
+  background-color: #ffd84d;
+}
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.Flex > p:nth-child(2) {
+  color: #71b9b9;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .Container {
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .One {
+    flex-direction: row;
+    /* display: none; */
+  }
+  .Two {
+    width: 90%;
+    margin: auto;
+  }
+  .Three {
+    width: 90%;
+    margin: auto;
+  }
+  .Btns {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .Btns > button {
+    border: none;
+    padding: 8px;
+    width: 50%;
+    gap: 4px;
+  }
+  .Sizes {
+    gap: 14px;
+  }
+  .Sizes > div {
+    width: 35px;
+    height: 35px;
+  }
+  .Three > h6 {
+    font-size: 16px;
+  }
+  .Three > p {
+    font-size: 16px;
+  }
+  .Price > p:nth-child(1) {
+    font-size: 20px;
+  }
+  .Price > p:nth-child(2) {
+    font-size: 18px;
+  }
+  .Price > p:nth-child(3) {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .Container {
+    width: 95%;
+    height: auto;
+    margin-bottom: 25px;
+    flex-direction: column;
+  }
+  .One {
+    flex-direction: row;
+  }
+  .Two {
+    width: 95%;
+    margin: auto;
+  }
+  .Three {
+    width: 95%;
+    margin: auto;
+  }
+  .Wishlist {
+    border: 1px solid lightgrey;
+    cursor: help;
+  }
+  .Btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .Btns > button {
+    border: none;
+    padding: 8px;
+    width: 50%;
+    gap: 4px;
+  }
+  .Sizes {
+    gap: 12px;
+  }
+  .Sizes > div {
+    width: 33px;
+    height: 33px;
+  }
+  .Three > h6 {
+    font-size: 14px;
+  }
+  .Three > p {
+    font-size: 14px;
+  }
+  .Price > p:nth-child(1) {
+    font-size: 18px;
+  }
+  .Price > p:nth-child(2) {
+    font-size: 16px;
+  }
+  .Price > p:nth-child(3) {
+    font-size: 20px;
+  }
+}

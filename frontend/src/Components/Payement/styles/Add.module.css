@@ -1,0 +1,74 @@
+.Container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.Select > select {
+  width: 100%;
+  padding: 6px;
+}
+.Select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 20px;
+}
+.flex {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+}
+.flex > div {
+  width: 50%;
+}
+.opt {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.opt {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.opt > button {
+  padding: 12px;
+  width: 18%;
+  gap: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+}
+.opt > button:nth-child(1) {
+  background-color: #47a5a9;
+  color: white;
+}
+.opt > button:nth-child(2) {
+  background-color: red;
+  color: white;
+}
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex > div {
+    width: 100%;
+  }
+  .opt > button {
+    padding: 10px;
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex > div {
+    width: 100%;
+  }
+  .opt > button {
+    padding: 10px;
+    width: 50%;
+  }
+}

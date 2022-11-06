@@ -1,0 +1,50 @@
+.Table {
+  width: 100%;
+  border: 0.5px solid grey;
+  border-bottom: none;
+}
+thead td {
+  padding: 10px;
+  background-color: #eeeeee;
+  font-size: 15px;
+}
+tbody td:nth-child(1) {
+  padding: 8px;
+  font-size: 13px;
+  text-align: start;
+}
+tbody td:nth-child(2) {
+  padding: 8px;
+  font-size: 13px;
+  text-align: end;
+}
+
+.Move {
+  display: flex;
+  width: 100%;
+  border: 0.5px solid grey;
+  font-weight: bolder;
+}
+.Move > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.Move button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #47a5a9;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .Move button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,119 @@
+.Header {
+  text-align: center;
+  padding: 50px 20px;
+}
+.Header > h5 {
+  color: grey;
+  margin-top: 30px;
+}
+.Header > h3 {
+  font-weight: bolder;
+}
+.Form {
+  padding: 0px 20%;
+}
+.Button {
+  background-color: #47a5a9 !important;
+  width: 100%;
+  padding: 14px !important;
+  font-size: 25px !important;
+  border: none;
+}
+.auth {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.auth > button {
+  border: 1px solid;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 7px;
+  background-color: #ffffff;
+}
+.authButton {
+  margin: 23px auto;
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 7px;
+  background-color: #ffffff;
+}
+.Or {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+}
+.Or > div {
+  width: 45%;
+}
+.Or > div:nth-child(2) {
+  width: 10%;
+  text-align: center;
+}
+
+.Foot {
+  color: grey;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.Foot > span {
+  color: #47a5a9;
+  font-weight: bold;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .Header {
+    text-align: center;
+    padding: 30px 10px;
+  }
+  .Form {
+    padding: 20px;
+  }
+  .Button {
+    padding: 12px !important;
+    font-size: 20px !important;
+  }
+  .auth {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+  .auth > button {
+    gap: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 6px;
+  }
+  .authButton {
+    gap: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 6px;
+  }
+  .Foot {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .Foot > span {
+    padding: 6px;
+  }
+}

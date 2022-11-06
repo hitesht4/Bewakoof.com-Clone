@@ -1,0 +1,7 @@
+.Login {
+  display: flex;
+  height: 90vh;
+}
+.Login > div {
+  flex: 1;
+}

@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  margin: 0px auto;
+}
+.flex {
+  display: flex;
+  height: 450px;
+}
+.flex > div {
+  flex: 1;
+}
+.flex img {
+  width: 100%;
+  height: 100%;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+}
+.part {
+  height: 80px;
+}

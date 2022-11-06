@@ -1,0 +1,36 @@
+.container {
+  width: 80%;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .container {
+    width: 98%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    font-size: 9px;
+    margin: 55px auto;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .container {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 10px;
+    font-size: 9px;
+    margin: 35px auto;
+  }
+  .container img {
+    width: 100%;
+    height: 80%;
+  }
+}

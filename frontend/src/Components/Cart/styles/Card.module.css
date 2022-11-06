@@ -1,0 +1,177 @@
+.container {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+.Cont {
+  margin: auto;
+  border: 0.5px solid grey;
+  padding-bottom: 10px;
+}
+.One {
+  width: 80%;
+}
+.Two {
+  width: 20%;
+}
+.Two > img {
+  width: 100%;
+}
+.Price {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.Price > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 24px;
+}
+.Price > p:nth-child(2) {
+  font-size: 22px;
+  text-decoration: line-through;
+  color: grey;
+}
+
+.Select {
+  width: 35%;
+  display: flex;
+  gap: 10px;
+}
+.Select > select {
+  width: 48%;
+  padding: 5px;
+}
+.green {
+  color: #6a9c24;
+  font-size: 15px;
+  font-weight: bold;
+}
+.title {
+  font-size: 18px;
+  margin-bottom: 1;
+}
+.Options {
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.Options > button {
+  width: 48%;
+  padding: 8px;
+  gap: 2%;
+  border: none;
+  border-radius: 4px;
+}
+.Options > button:nth-child(1) {
+  background-color: red;
+  font-weight: bolder;
+}
+.Options > button:nth-child(2) {
+  background-color: #47a5a9;
+  font-weight: bolder;
+}
+.Empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Empty > button {
+  width: 48%;
+  padding: 8px;
+  gap: 2%;
+  border: none;
+  border-radius: 4px;
+  margin: 20px auto;
+  background-color: #47a5a9;
+  color: white;
+}
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .container {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .One {
+    width: 80%;
+
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .One > p {
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  .Two {
+    width: 50%;
+    margin: auto;
+  }
+  .Price {
+    gap: 16px;
+    margin: auto;
+    justify-content: center;
+  }
+  .Price > p:nth-child(1) {
+    font-size: 16px;
+  }
+  .Price > p:nth-child(2) {
+    font-size: 16px;
+  }
+  .Select {
+    width: 90%;
+    margin: auto;
+  }
+  .Options > button {
+    width: 48%;
+    padding: 6px;
+    gap: 2%;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .container {
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+  .One {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .One > p {
+    font-weight: bolder;
+    font-size: 13px;
+  }
+  .Two {
+    width: 50%;
+    margin: auto;
+  }
+  .Price {
+    gap: 16px;
+    margin: auto;
+    justify-content: center;
+  }
+  .Price > p:nth-child(1) {
+    font-size: 16px;
+  }
+  .Price > p:nth-child(2) {
+    font-size: 16px;
+  }
+  .Select {
+    width: 90%;
+    margin: auto;
+  }
+  .Options > button {
+    width: 48%;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+  }
+}

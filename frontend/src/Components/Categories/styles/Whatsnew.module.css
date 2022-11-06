@@ -1,0 +1,72 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 85%;
+  margin: 15px auto;
+  gap: 28px;
+}
+.container > div {
+  text-align: start;
+  font-weight: bold;
+  font-size: 18px;
+}
+.container > div:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  background: transparent;
+  transition: 1s;
+}
+.container img {
+  width: 100%;
+}
+.container img:hover {
+  opacity: 0.7;
+}
+.Whatsnew {
+  text-align: center;
+}
+.Whatsnew > h5,
+.head {
+  padding: 20px 0px;
+  font-weight: bold;
+  text-align: center;
+}
+.cut {
+  font-weight: lighter !important;
+  color: grey;
+  text-decoration: line-through;
+}
+.Price {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+.box {
+  width: 75%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin: 15px auto;
+    gap: 5px;
+  }
+  .container > div {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin: 15px auto;
+    gap: 5px;
+  }
+  .container > div {
+    font-size: 8px;
+  }
+}

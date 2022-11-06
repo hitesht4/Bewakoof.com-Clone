@@ -1,0 +1,51 @@
+.Container {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+}
+.single {
+  width: 65%;
+  padding: 10px;
+}
+.double {
+  width: 35%;
+  padding: 10px;
+}
+.Loader {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 411px) and (max-width: 800px) {
+  .Container {
+    width: 97%;
+    margin: 20px auto;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+  .single {
+    width: 90%;
+    margin: auto;
+  }
+  .double {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+  .Container {
+    width: 97%;
+    margin: 10px auto;
+    flex-direction: column;
+    margin: auto;
+  }
+  .single {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+  }
+  .double {
+    width: 90%;
+    margin: auto;
+  }
+}

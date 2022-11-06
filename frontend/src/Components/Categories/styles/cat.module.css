@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 75%;
+  margin: 15px auto;
+}
+.container img {
+  width: 100%;
+}
+.head {
+  padding: 20px 0px;
+  font-weight: bold;
+  text-align: center;
+}
+.Banner {
+  width: 95%;
+  margin: 10px auto;
+}
+.Banner > img {
+  width: 100%;
+}
+.boxer {
+  margin-top: 30px;
+}
