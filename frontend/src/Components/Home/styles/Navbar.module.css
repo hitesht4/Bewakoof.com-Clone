@@ -71,7 +71,7 @@
     margin: auto;
   }
   .logo {
-    display: none;
+   width: 60%;
   }
   .Search {
     display: none;
