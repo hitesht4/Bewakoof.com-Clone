@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Card from "../Components/Mens/Card";
-import Dropdown from "../Components/Mens/Dropdown";
 import styles from "../Components/Mens/styles/card.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getDataApi } from "../Store/Product/product.actions";
@@ -13,7 +12,7 @@ const Womens = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const url = "http://localhost:5000/womens";
+    const url = "https://check-lr1yrg4f5-hitesht4.vercel.app/prod/womens";
     dispatch(getDataApi(url));
   }, []);
   if (loading) {

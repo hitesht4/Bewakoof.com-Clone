@@ -13,7 +13,7 @@ const Mens = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const url = "http://localhost:5000/mens";
+    const url = "https://check-lr1yrg4f5-hitesht4.vercel.app/prod/mens";
     dispatch(getDataApi(url));
   }, []);
   if (loading) {

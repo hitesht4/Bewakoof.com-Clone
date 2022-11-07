@@ -53,7 +53,9 @@ const Dropdown = ({ Sort }) => {
                   onChange={(e) => {
                     if (e.target.checked === true) {
                       dispatch(
-                        getDataApi(`http://localhost:5000/mfilter/${item.name}`)
+                        getDataApi(
+                          `https://check-lr1yrg4f5-hitesht4.vercel.app/prod/mfilter/${item.name}`
+                        )
                       );
                     }
                   }}
@@ -79,7 +81,8 @@ const Dropdown = ({ Sort }) => {
                 type="checkbox"
                 onChange={(e) => {
                   if (e.target.checked === true) {
-                    let url = "http://localhost:5000/msort/1";
+                    let url =
+                      "https://check-lr1yrg4f5-hitesht4.vercel.app/prod/msort/1";
                     dispatch(getDataApi(url));
                   }
                 }}
@@ -91,7 +94,8 @@ const Dropdown = ({ Sort }) => {
                 type="checkbox"
                 onChange={(e) => {
                   if (e.target.checked === true) {
-                    let url = "http://localhost:5000/msort/-1";
+                    let url =
+                      "https://check-lr1yrg4f5-hitesht4.vercel.app/prod/msort/-1";
                     dispatch(getDataApi(url));
                   }
                 }}

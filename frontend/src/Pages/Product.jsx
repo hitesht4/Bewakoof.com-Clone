@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Details from "../Components/Details/Details";
 import { useDispatch, useSelector } from "react-redux";
@@ -13,7 +13,7 @@ const Product = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const url = `http://localhost:5000/${_id}`;
+    const url = `https://check-lr1yrg4f5-hitesht4.vercel.app/prod/${_id}`;
     dispatch(getDataApi(url));
   }, []);
 

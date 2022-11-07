@@ -15,11 +15,14 @@ export const getCartApi = () => async (dispatch) => {
     type: CART_LOADING,
   });
   try {
-    let r = await axios.get("http://localhost:5000/cart", {
-      headers: {
-        token: token,
-      },
-    });
+    let r = await axios.get(
+      "https://check-lr1yrg4f5-hitesht4.vercel.app/cart",
+      {
+        headers: {
+          token: token,
+        },
+      }
+    );
     dispatch({
       type: GET_CART_Items,
       payload: r.data,
@@ -37,7 +40,7 @@ export const AddtoCartApi = (data) => async (dispatch) => {
   });
   try {
     let r = await axios.post(
-      "http://localhost:5000/cart",
+      "https://check-lr1yrg4f5-hitesht4.vercel.app/cart",
       { ...data, qty: 1 },
       {
         headers: {
@@ -61,11 +64,16 @@ export const deleteCartApi = (_id) => async (dispatch) => {
     type: CART_LOADING,
   });
   try {
-    let r = await axios.delete(`http://localhost:5000/cart/${_id}`, {
-      headers: {
-        token: token,
-      },
-    });
+    let r = await axios.delete(
+      `https://check-lr1yrg4f5-hitesht4.vercel.app/cart/${_id}`,
+      {
+        headers: {
+          token: token,
+        },
+      }
+    );
+
+    console.log(r.data);
 
     dispatch({
       type: REMOVE_FROM_CART,
@@ -84,7 +92,7 @@ export const changeCart = (_id, qnt) => async (dispatch) => {
   });
   try {
     let r = await axios.put(
-      `http://localhost:5000/cart/${_id}`,
+      `https://check-lr1yrg4f5-hitesht4.vercel.app/cart/${_id}`,
       { qty: qnt },
       {
         headers: {
