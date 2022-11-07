@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getDataApi } from "../Store/Product/product.actions";
 import Banner from "../Components/Mens/Banner";
 import { Circles } from "react-loader-spinner";
+import Footer from "../Components/Home/Footer";
 
 const Mens = () => {
   const { data, loading, error } = useSelector((state) => state.data);
@@ -56,6 +57,7 @@ const Mens = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
