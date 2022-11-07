@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Bewakoof.com-Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-Ecommerce Website
+Bewakoof is India’s largest Casual Wear and Lifestyle Brand and E-commerce platform. Its headquarter is situated in Mumbai, Maharashtra. Bewakoof.com was founded in 2012 by Prabhakiran Singh and Siddharth Munot.
+The Bewkoof was founded as the Trendy and witty T-Shirt Brand by two IIT Bombay Ex-students. In 2012, Bewkoof launched as an E-commerce platform for the youth and its portfolio includes trendy fashion apparel for men and women.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Technologies used
 
-### `npm start`
+<hr>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Redux
+- React-Bootstrap
+- MongoDB
+- Express
+- NodeJS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installing and Running
 
-### `npm test`
+<hr>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this application on your local system
 
-### `npm run build`
+- Clone the Repository
+- Run the Backend Server
+- Authorise
+- Use the application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- There is login and logout functionality.
+- Elegant navbar for easy navigation between pages and categories.
+- Product Pages where all the products are displayed using Api.
+- Single Product Page on clicking Each Product carrying description of that product.
+- Cart with Crud Operations.
+- Payment Pages.
+- Footer for navigating to different social Media Pages.
 
-### `npm run eject`
+## Steps to navigate the website:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<hr>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- On opening the application the user is taken to the landing Page which have a Navbar to navigate to different Section of the application.
+- On the Landing Page Navbar, user can click on Website Logo in Navbar to navigate to categories where all the categories of the products available are displayed.
+- There are three categories available Mens/Womens/Accessories.
+- Product Pages containing all the Products available with options of sort and filter according to users requirements.
+- Single Product Page to view the description of each and every Product.
+- Cart Page with of add/change/delete the product.
+- Payment Pages with form validation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Home Page and Footer
 
-## Learn More
+  <img width="1000" alt="Home" src="https://user-images.githubusercontent.com/97459069/200315726-944f0769-9cd1-444f-90e2-7439d51a3884.PNG">
+  <img width="1000" alt="Footer" src="https://user-images.githubusercontent.com/97459069/200316035-a51c3fb1-2bfc-49f9-a0ad-cbf47ed5cfde.PNG">
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Categories
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img width="1000" alt="cat1" src="https://user-images.githubusercontent.com/97459069/200315987-5c1cc2ce-beee-4f6f-892b-fe061d16aedc.PNG">
+<img width="1000" alt="cat2" src="https://user-images.githubusercontent.com/97459069/200316001-6b04901a-3529-4a68-88ec-7b09053d321d.PNG">
+<img width="1000" alt="cat3" src="https://user-images.githubusercontent.com/97459069/200316021-bbef3062-6739-4fcb-89d0-9b5322c126d4.PNG">
+---
 
-### Code Splitting
+### Products Section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<img width="1000" alt="Men" src="https://user-images.githubusercontent.com/97459069/200316073-363e8eb0-8602-4879-a895-ba3ad2b58195.PNG">
+<img width="1000" alt="Women" src="https://user-images.githubusercontent.com/97459069/200316120-d54870f8-b174-4fc6-9f59-7b4a2fe804de.PNG">
+<img width="1000" alt="single" src="https://user-images.githubusercontent.com/97459069/200316105-acdddbee-1c8d-44ff-a508-33bbc872a383.PNG">
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Login Page/Signup Page
 
-### Making a Progressive Web App
+## <img width="1000" alt="login" src="https://user-images.githubusercontent.com/97459069/200316050-6c3c3fc3-f93d-4e3d-9c15-18ed51ddd7bc.PNG">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### Cart Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img width="1000" alt="Cart" src="https://user-images.githubusercontent.com/97459069/200315910-f4dc4b7a-ec8b-4db3-81c2-0933473ce317.PNG">
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Payments Page
 
-### `npm run build` fails to minify
+<img width="1000" alt="pay" src="https://user-images.githubusercontent.com/97459069/200316087-0b8f30f3-21d7-4928-b374-341f579573db.PNG">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Authors
+
+1. [Hitesh Tarwani](https://github.com/hitesht4)
