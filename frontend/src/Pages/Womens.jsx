@@ -6,6 +6,7 @@ import { getDataApi } from "../Store/Product/product.actions";
 import Banner from "../Components/Mens/Banner";
 import { Circles } from "react-loader-spinner";
 import WDropdown from "../Components/Mens/WDropdown";
+import Footer from "../Components/Home/Footer";
 
 const Womens = () => {
   const { data, loading, error } = useSelector((state) => state.data);
@@ -54,6 +55,7 @@ const Womens = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
