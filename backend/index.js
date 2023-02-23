@@ -19,5 +19,5 @@ app.get("/", (req, res) => {
 console.log();
 app.listen(port, async () => {
   await connect;
-  console.log("Listening to port 9000");
+  console.log("Listening to port 5000");
 });
