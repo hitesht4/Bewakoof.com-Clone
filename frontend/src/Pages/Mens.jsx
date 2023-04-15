@@ -14,9 +14,10 @@ const Mens = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const url = "https://check-lr1yrg4f5-hitesht4.vercel.app/prod/mens";
+    const url = "https://backend-weld-two.vercel.app/prod/mens";
     dispatch(getDataApi(url));
   }, []);
+
   if (loading) {
     return (
       <div style={{ display: "flex", justifyContent: "center" }}>

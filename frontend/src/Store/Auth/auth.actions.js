@@ -11,14 +11,13 @@ export const loginAPI = (creds) => async (dispatch) => {
   });
   try {
     let response = await axios.post(
-      "https://check-lr1yrg4f5-hitesht4.vercel.app/user/login",
+      "https://backend-weld-two.vercel.app/user/login",
       creds
     );
     dispatch({
       type: AUTH_SIGN_IN_SUCCESS,
-      payload: response.data.Token,
+      payload: response.data,
     });
-    window.location.reload();
 
     return response.data.message;
   } catch (e) {

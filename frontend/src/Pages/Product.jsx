@@ -9,11 +9,10 @@ const Product = () => {
   const params = useParams();
   const { _id } = params;
   const { data, loading, error } = useSelector((state) => state.data);
-
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const url = `https://check-lr1yrg4f5-hitesht4.vercel.app/prod/${_id}`;
+    const url = `https://backend-weld-two.vercel.app/prod/${_id}`;
     dispatch(getDataApi(url));
   }, []);
 
@@ -39,11 +38,7 @@ const Product = () => {
       </div>
     );
   }
-  return (
-    <div>
-      <Details item={data[0]} />
-    </div>
-  );
+  return <div>{data.length > 0 && <Details item={data[0]} />}</div>;
 };
 
 export default Product;

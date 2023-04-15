@@ -7,6 +7,7 @@ import styles from "./styles/Card.module.css";
 const Allcards = () => {
   const { cart } = useSelector((state) => state.cart);
   const navigate = useNavigate();
+  console.log(cart);
 
   if (cart.length === 0) {
     return (

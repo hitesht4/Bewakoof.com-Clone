@@ -15,7 +15,7 @@ export const getDataApi = (url) => async (dispatch) => {
       type: GET_PRODUCTS_SUCCESS,
       payload: r.data,
     });
-    console.log(r.data);
+
     return r.data;
   } catch (e) {
     dispatch({

@@ -15,8 +15,9 @@ export const getCartApi = () => async (dispatch) => {
     type: CART_LOADING,
   });
   try {
+    let email = localStorage.getItem("Email");
     let r = await axios.get(
-      "https://check-lr1yrg4f5-hitesht4.vercel.app/cart",
+      `https://backend-weld-two.vercel.app/cart/${email}`,
       {
         headers: {
           token: token,
@@ -39,15 +40,14 @@ export const AddtoCartApi = (data) => async (dispatch) => {
     type: CART_LOADING,
   });
   try {
-    let r = await axios.post(
-      "https://check-lr1yrg4f5-hitesht4.vercel.app/cart",
-      { ...data, qty: 1 },
-      {
-        headers: {
-          token: token,
-        },
-      }
-    );
+    let email = localStorage.getItem("Email");
+    let r = await axios.post("https://backend-weld-two.vercel.app/cart", {
+      ...data,
+      qty: 1,
+      user: email,
+    });
+
+    console.log(r);
     dispatch({
       type: ADD_TO_CART,
       payload: r.data.item,
@@ -64,11 +64,12 @@ export const deleteCartApi = (_id) => async (dispatch) => {
     type: CART_LOADING,
   });
   try {
+    const email = localStorage.getItem("Email");
     let r = await axios.delete(
-      `https://check-lr1yrg4f5-hitesht4.vercel.app/cart/${_id}`,
+      `https://backend-weld-two.vercel.app/cart/${_id}`,
       {
         headers: {
-          token: token,
+          email: email,
         },
       }
     );
@@ -91,12 +92,13 @@ export const changeCart = (_id, qnt) => async (dispatch) => {
     type: CART_LOADING,
   });
   try {
+    const email = localStorage.getItem("Email");
     let r = await axios.put(
-      `https://check-lr1yrg4f5-hitesht4.vercel.app/cart/${_id}`,
+      `https://backend-weld-two.vercel.app/cart/${_id}`,
       { qty: qnt },
       {
         headers: {
-          token: token,
+          email: email,
         },
       }
     );

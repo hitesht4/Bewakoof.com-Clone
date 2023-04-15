@@ -1,7 +1,6 @@
-import { Dispatch, useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Allcards from "../Components/Cart/Allcards";
-import Card from "../Components/Cart/Card";
 import Other2 from "../Components/Cart/Other2";
 import Others from "../Components/Cart/Others";
 import Table from "../Components/Cart/Table";
@@ -13,9 +12,7 @@ import styles from "./Styles/Cart.module.css";
 
 const Cart = () => {
   const dispatch = useDispatch();
-
   const { loading, error } = useSelector((state) => state.cart);
-  const { token } = useSelector((state) => state.auth.data);
 
   useEffect(() => {
     dispatch(getCartApi());

@@ -12,8 +12,18 @@ const Sizes = ["S", "M", "L", "XL", "XXL", "3XL"];
 const Details = ({ item }) => {
   const [number, setNumber] = useState(0);
   const { cart } = useSelector((state) => state.cart);
+  const [added, setAdded] = useState();
   const { isAuthenticated } = useSelector((state) => state.auth.data);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    let check = cart.some((d) => d._id === item._id);
+    if (check) {
+      setAdded(true);
+    } else {
+      setAdded(false);
+    }
+  }, []);
 
   return (
     <div>
@@ -64,9 +74,12 @@ const Details = ({ item }) => {
           </div>
 
           <div className={styles.Btns}>
-            {cart.some((p) => p._id === item._id) ? (
+            {added ? (
               <button
-                onClick={() => dispatch(deleteCartApi(item._id))}
+                onClick={() => {
+                  setAdded(false);
+                  dispatch(deleteCartApi(item._id));
+                }}
                 style={{ backgroundColor: "red", color: "white" }}
               >
                 <BsBagCheck
@@ -76,7 +89,10 @@ const Details = ({ item }) => {
               </button>
             ) : (
               <button
-                onClick={() => dispatch(AddtoCartApi(item))}
+                onClick={() => {
+                  setAdded(true);
+                  dispatch(AddtoCartApi(item));
+                }}
                 disabled={isAuthenticated ? false : true}
               >
                 Add to cart
@@ -85,7 +101,6 @@ const Details = ({ item }) => {
                 />
               </button>
             )}
-
             <button className={styles.Wishlist}>
               <BsHeart />
               WISHLIST

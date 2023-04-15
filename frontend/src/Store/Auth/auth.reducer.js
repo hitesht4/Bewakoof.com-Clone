@@ -12,6 +12,7 @@ export const authInitalState = {
   data: {
     token: token,
     isAuthenticated: token.length > 0 ? true : false,
+    email: "",
   },
   error: false,
   Alert: false,
@@ -23,14 +24,17 @@ export const Authreducer = (state = authInitalState, { type, payload }) => {
       return { ...state, loading: true };
     }
     case AUTH_SIGN_IN_SUCCESS: {
-      localStorage.setItem("token", payload);
+      localStorage.setItem("token", payload.Token);
+      localStorage.setItem("Email", payload.Email);
+
       return {
         ...state,
         loading: false,
         Alert: false,
         data: {
-          token: payload,
+          token: payload.Token,
           isAuthenticated: true,
+          email: payload.Email,
         },
       };
     }
@@ -39,6 +43,7 @@ export const Authreducer = (state = authInitalState, { type, payload }) => {
     }
     case AUTH_SIGN_OUT: {
       localStorage.removeItem("token");
+      localStorage.removeItem("Email");
       return {
         ...state,
         data: {

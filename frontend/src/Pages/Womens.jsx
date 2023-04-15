@@ -13,7 +13,7 @@ const Womens = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const url = "https://check-lr1yrg4f5-hitesht4.vercel.app/prod/womens";
+    const url = "https://backend-weld-two.vercel.app/prod/womens";
     dispatch(getDataApi(url));
   }, []);
   if (loading) {
